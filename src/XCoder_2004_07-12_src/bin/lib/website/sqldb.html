@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Build MS SQL Server Database</title>
+</head>
+
+<body>
+
+<h3>How to build MS SQL Server Database</h3>
+
+This demo shows how to create a MS SQL Server Database in MS SQL Server 7.0.
+
+<a name="db">
+
+<ol>
+
+<li>Open SQL Server Enterprise Manager and open the server (in this case, MELANTHA).
+Open Databases node, you can see all the databases on this server.
+<p><img src="./images/1.jpg"></p>
+
+<li>Right click on Databases and select "New Database..." to create a new database.
+<p><img src="./images/2.jpg"></p>
+
+<li>In the Database Properties dialog, enter the database name. Here the entered name
+is "NewDatabase". You can change other options if you want to. It is ok if you don't 
+change anything else.
+<p><img src="./images/3.jpg"></p>
+
+<li>Now you can see the newDatabase database under the "Databases" node, together with
+other databases.
+<p><img src="./images/4.jpg"></p>
+
+<li>Now we will create a login name for the new database. Go to "Security" node and 
+right click on "Logins", select "New Login..."
+<p><img src="./images/5.jpg"></p>
+
+<li>In the "General" tab of the "SQL Server Login Properties" dialog box, enter Name of the login,
+choose "SQL Server authentication", enter your password, and change the 
+default databse to "NewDatabase".
+<p><img src="./images/6.jpg"></p>
+
+<li>In the "Database Access" tab, check the checkbox on the left side of the database
+you just created, in this case "NewDatabase". Set the "Permit in database role" to
+"public" and "db_owner", then click ok.
+<p><img src="./images/7.jpg"></p>
+
+<li>You will be prompted for the password. Enter the password you chose in step
+6. Now you are all set and can close the SQL Server Enterprise Manager.
+<p><img src="./images/8.jpg"></p>
+
+<a name="odbc">
+
+</body>
+
+</html>

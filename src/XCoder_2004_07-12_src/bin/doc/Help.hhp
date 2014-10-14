@@ -1,0 +1,16 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Help.chm
+Contents file=c:\Documents and Settings\Owner\My Documents\Visual Studio Projects\XinCoder\bin\doc\Table of Contents.hhc
+Default topic=C:\Documents and Settings\Owner\My Documents\Visual Studio Projects\XinCoder\bin\doc\index.html
+Display compile progress=No
+Index file=c:\Documents and Settings\Owner\My Documents\Visual Studio Projects\XinCoder\bin\doc\Index.hhk
+Language=0x409 English (United States)
+Title=Index
+
+
+[FILES]
+C:\Documents and Settings\Owner\My Documents\Visual Studio Projects\XinCoder\bin\doc\index.html
+
+[INFOTYPES]
+

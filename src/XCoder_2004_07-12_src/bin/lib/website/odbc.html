@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Create ODBC System DSN</title>
+</head>
+
+<body>
+
+<h3>How to Create ODBC System DSN</h3>
+
+This demo shows how to create ODBC system DSN in windows 2000 or windows XP profession.
+
+<ol>
+
+<li>Open "Control Panel" -> "Administrative Tools" -> "Data Sources (ODBC)",
+and go to tab "System DSN". Click on "Add..." button will add a new System DSN
+record.
+<p><img src="./images/odbc1.jpg"></p>
+
+<li>Choose the drive for the type database you just created. In this case, it is
+MS SQL server, so scroll to the end of the listbox and choose "SQL Server".
+<p><img src="./images/odbc2.jpg"></p>
+
+<li>In the "Create a New Data Source to SQL Server" dialog box, enter the "Name" of
+the DSN record, in this case let's use "newDB". Choose the "Which SQL Server do you
+want to connect to?" to the SQL server where we just create the newDatabase database.
+In this case it is "MELANTHA". Click "Next" button at the bottom of the form.
+<p><img src="./images/odbc3.jpg"></p>
+
+<li>In the next form, select "With SQL Server authentication using a login ID and 
+password entered by the user.", and enter the login name and password when we create
+the login in the "Security" node. Click on "Next" button.
+<p><img src="./images/odbc4.jpg"></p>
+
+<li>This is the next page, you don't need to change anything. Click on "Next" button.
+<p><img src="./images/odbc5.jpg"></p>
+
+<li>This is the next page, you generally don't need to change anything. Click on "Finish" button.
+<p><img src="./images/odbc6.jpg"></p>
+
+<li>You will be prompt with this form, which summarized your choices. Click on 
+"Test Data Source..." button.
+<p><img src="./images/odbc7.jpg"></p>
+
+<li>If the test results say "TESTS COMPLETED SUCCESSFULLY!", then you are all done. Otherwise
+you need to go back to previous steps to check what is wrong.
+<p><img src="./images/odbc8.jpg"></p>
+
+
+</body>
+
+</html>

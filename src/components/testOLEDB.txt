@@ -1,0 +1,34 @@
+<p>hi test OLEDB connection</p>
+
+<%
+Dim oDSN
+
+on error resume next
+'oDSN = Server.CreateObject("ODBCTool.Dsn")
+Set oDSN = Server.CreateObject("ADODB.Connection")
+
+'oDSN.Open "DSN=tttt;Uid=sa;Pwd=SallySalt"
+
+oDSN.Open "Provider=sqloledb;" & _
+           "Data Source=ODIN;" & _
+           "Initial Catalog=Invicta2;" & _
+           "User Id=sa;" & _
+           "Password=SallySalt"
+
+'oDSN.Execute "sp_tables"
+Dim rs
+set rs = oDSN.Execute ("Select * From Flight", 1)
+
+'set oComm = Server.CreateObject("ADODB.Command")
+
+if not rs.eof then response.write "rs(1) = " & rs(1)
+
+oDSN.Close()
+
+if err.number <> 0 then
+Response.Write err.Description
+end if
+%>
+
+<p>.End.</p>
+

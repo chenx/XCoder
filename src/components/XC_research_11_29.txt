@@ -1,0 +1,128 @@
+About getting database structure in ASP.
+
+
+<% @LANGUAGE="VBSCRIPT" %>
+
+<!--#include file="adovbs.inc"-->
+
+<p>Hi</p>
+
+<%
+' http://www.motobit.com/tips/detpg_listdb.htm
+' http://forums.aspfree.com/showthread.php?t=22357 - Access
+' http://www.motobit.com/help/scptutl/upload.asp
+' ASP/VB.NET get all table names in database
+'Option Explicit
+Response.Buffer = True
+'On Error Resume Next
+
+Dim oConn, oRS, oFld
+
+Set oConn = Server.CreateObject("ADODB.Connection")
+Set oRS = Server.CreateObject("ADODB.Recordset")
+
+oConn.ConnectionString = "DSN=Invicta2;UID=sa;Password=SallySalt;"
+
+OConn.Open
+
+' http://www.informit.com/articles/article.asp?p=27199&seqNum=1
+' Show server information
+'call writeSP(ors, oconn, "Exec sp_server_info")
+' Show all databases
+'call writeSP(ors, oconn, "Exec sp_databases")
+'call writeSP(ors, oconn, "Exec sp_helpserver")
+'call writeSP(ors, oconn, "Exec sp_who")
+'call writeSP(ors, oconn, "Exec sp_helpdb")
+oConn.Execute "USE Invicta2"
+call writeSP(ors, oconn, "Exec sp_tables")
+call writeSP(ors, oconn, "Exec sp_columns QCImportActivity")
+
+' Show all tables in a database
+' Show all columns in a table
+'call writeSP(ors, oconn, "EXEC sp_columns @table_name =
+'QCImportActivity'")
+
+
+''''''''''''''''''''''''''''''''''''''
+'Get all database tables.
+  Set TablesSchema = oConn.OpenSchema( adSchemaTables)
+  Do While Not TablesSchema.EOF
+    'Get all table columns.
+    Set ColumnsSchema = oConn.OpenSchema(adSchemaColumns, _
+      Array(Empty, Empty, "" & TablesSchema("TABLE_NAME")))
+     
+    if NOT (TablesSchema("TABLE_TYPE") = "SYSTEM TABLE") then
+         '''writeLine( TablesSchema("TABLE_NAME") & " - " &
+TablesSchema("TABLE_TYPE") )
+                 
+         Do While Not ColumnsSchema.EOF
+                  'writeLine( TablesSchema("TABLE_NAME") & ", " &
+ColumnsSchema("COLUMN_NAME") )
+                  '''writeLine( "<dd>" & ColumnsSchema("COLUMN_NAME") &
+"    DataType - " & getColumnTypeName(
+ColumnsSchema("SS_DATA_TYPE") ) )
+                  ColumnsSchema.MoveNext
+         Loop
+    END IF
+   
+    TablesSchema.MoveNext
+  Loop
+
+'oRS.Close
+'Set oRs = Nothing
+oConn.Close
+Set oConn = Nothing
+
+
+function writeSP(byref ors, byref oConn, byval sp)
+oRS.Open sp, oConn
+writemsg("<h2>" & sp & "</h2>")
+
+do while not oRS.EOF
+         for i = 0 to oRS.Fields.count - 1
+                 Response.Write ors(i) & ", "
+         next
+         Response.Write "<br>"
+         oRS.MoveNext()
+loop
+
+oRS.Close()
+end function
+
+
+function getColumnTypeName(typeID)
+  Dim typeName
+ 
+  if typeID = 37 then
+typeName = "uniqueidentifier"
+  elseif typeID = 38 then
+typeName = "int"
+  elseif typeID = 39 then
+typeName = "varchar"
+  elseif typeID = 47 then
+typeName = "char"
+  elseif typeID = 52 then
+typename = "smallint"
+  elseif typeID = 56 then
+    typename = "int NOT NULL"
+  elseif typeID = 110 then
+    typename = "smallmoney"
+  elseif typeID = 111 then
+    typename = "smalldatetime"
+  else
+    typeName = typeID
+  end if
+ 
+  getColumnTypeName = typeName
+end function
+
+function writeLine(line)
+Response.Write "" & line & "<br>"
+end function
+
+function writeMsg(msg)
+Response.Write "<p>" & msg & "</p>"
+end function
+
+
+%>
