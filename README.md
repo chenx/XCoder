@@ -16,6 +16,7 @@ In short, XCoder is a RAD (Rapid Application Development) tool. It is used to he
 A little more specific, XCoder is a code generator. It automatically generates code for a database driven website or part of it. The website developer then can customize the code. The automatic generation part can save over 90% of the development time and allow the developer to concentrate on high level function design instead of low level programming details. Figure 1 shows what XCoder does. 
 
 <img src="http://cssauh.com/xc/demo/XCoder/README/image/fig1.jpg">
+<p>Figure 1. Role of XCoder</p>
 
 <h2>2. Detail</h2>
 
@@ -28,12 +29,14 @@ Current popular programming languages for creating database driven website inclu
 This is the early version of XCoder written in the fall of 2003 in my Research Assistant work for the MarBEC center of University of Hawaii. It is part of the <a href="http://www.hawaii.edu/epscor/">EPSCoR</a> website and helped with its development. It generates an information management module for a website, which allows information input, edit, view and delete. Figure 2 is a screenshot of the application in action.
 
 <img src="http://cssauh.com/xc/demo/XCoder/README/image/fig2.jpg">
+<p>Figure 2. Screenshot of XCoder web version</p>
 
 2.3 XCoder as a windows application.
 
 This is the new version of XCoder which I started this year. It is totally rewritten in VB.NET and has many new features. It can generate a website framework that allows user to sign up and log in. Within this framework these functional modules can be generated: information management (the function of the web version above), bulletin board, file upload, search, calendar, data export to Word, Excel and Access. Figure 3 is a screenshot of the software. 
 
 <img src="http://cssauh.com/xc/demo/XCoder/README/image/fig3.jpg">
+<p>Figure 3. Screenshot of XCoder desktop version</p>
 
 <h2>3. Prospect</h2>
 
