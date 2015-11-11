@@ -15,10 +15,10 @@ In short, XCoder is a RAD (Rapid Application Development) tool. It is used to he
 
 A little more specific, XCoder is a code generator. It automatically generates code for a database driven website or part of it. The website developer then can customize the code. The automatic generation part can save over 90% of the development time and allow the developer to concentrate on high level function design instead of low level programming details. Figure 1 shows what XCoder does. 
 
-<div style="text-align: center">
+<center>
 <img src="http://cssauh.com/xc/demo/XCoder/README/image/fig1.jpg">
 <p>Figure 1. Role of XCoder</p>
-</div>
+</center>
 
 <h2>2. Detail</h2>
 
