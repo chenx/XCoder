@@ -3,11 +3,18 @@ XCoder
 
 XCoder is a website framework generator written in VB.NET. It generates a website framework in ASP.
 
-XCoder was written back in 2004. It summarizes several patterns of IMS (Information Management System), and generates template based these patterns. This can immensely speed up the development speed.
+XCoder was written back in 2004. It summarizes several patterns of IMS (Information Management System), and generates template based these patterns. This can immensely speed up the development speed. In my case, it cuts down 80% of development time and cost.
 
 This can potentially be extended to more patterns, and generate code in other languages.
 
 For more details, see Help.chm (extracted from <a href="https://github.com/chenx/XCoder/releases/download/XCoder_v1.0.0_2005/Help.zip">Help.zip</a>).
+
+<h3>1. Overview</h3>
+
+In short, XCoder is a RAD (Rapid Application Development) tool. It is used to help developing database driven website.
+
+A little more specific, XCoder is a code generator. It automatically generates code for a database driven website or part of it. The website developer then can customize the code. The automatic generation part can save over 90% of the development time and allow the developer to concentrate on high level function design instead of low level programming details. Figure 1 shows what XCoder does. 
+
 
 Source code and Installer
 =========================
