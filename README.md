@@ -22,11 +22,11 @@ A little more specific, XCoder is a code generator. It automatically generates c
 
 <h2>2. Detail</h2>
 
-2.1 A little background.
+<h3>2.1 A little background.</h3>
 
 Current popular programming languages for creating database driven website include ASP, ASP.NET, PHP, JSP and CodeFusion etc. ASP was released by Microsoft in 1996. XCoder generates code in ASP.
 
-2.2 XCoder as a web application.
+<h3>2.2 XCoder as a web application.</h3>
 
 This is the early version of XCoder written in the fall of 2003 in my Research Assistant work for the MarBEC center of University of Hawaii. It is part of the <a href="http://www.hawaii.edu/epscor/">EPSCoR</a> website and helped with its development. It generates an information management module for a website, which allows information input, edit, view and delete. Figure 2 is a screenshot of the application in action.
 
@@ -35,7 +35,7 @@ This is the early version of XCoder written in the fall of 2003 in my Research A
 <br/>Figure 2. Screenshot of XCoder web version
 </p>
 
-2.3 XCoder as a windows application.
+<h3>2.3 XCoder as a windows application.</h3>
 
 This is the new version of XCoder which I started this year. It is totally rewritten in VB.NET and has many new features. It can generate a website framework that allows user to sign up and log in. Within this framework these functional modules can be generated: information management (the function of the web version above), bulletin board, file upload, search, calendar, data export to Word, Excel and Access. Figure 3 is a screenshot of the software. 
 
