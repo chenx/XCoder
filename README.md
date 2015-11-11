@@ -7,7 +7,7 @@ XCoder was written back in 2004. It summarizes several patterns of IMS (Informat
 
 This can potentially be extended to more patterns, and generate code in other languages.
 
-For more details, see Help.chm (extracted from <a href="https://github.com/chenx/XCoder/releases/download/XCoder_v1.0.0_2005/Help.zip">Help.zip</a>).
+For more details, see Help.chm (to be extracted from <a href="https://github.com/chenx/XCoder/releases/download/XCoder_v1.0.0_2005/Help.zip">Help.zip</a>).
 
 <h2>1. Overview</h2>
 
