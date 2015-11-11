@@ -1,7 +1,7 @@
 XCoder
 ======
 
-XCoder is a website framework generator written in VB.NET. It generates a website framework in ASP.
+XCoder is a website framework generator written in VB.NET and ASP. It generates a website framework in ASP.
 
 XCoder was written back in 2004. It summarizes several patterns of IMS (Information Management System), and generates template based these patterns. This can immensely speed up the development speed. 
 
