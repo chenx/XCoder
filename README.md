@@ -17,7 +17,7 @@ A little more specific, XCoder is a code generator. It automatically generates c
 
 <p align="center">
 <img src="http://cssauh.com/xc/demo/XCoder/README/image/fig1.jpg">
-<p>Figure 1. Role of XCoder</p>
+<br/>Figure 1. Role of XCoder
 </p>
 
 <h2>2. Detail</h2>
